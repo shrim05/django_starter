@@ -9,4 +9,3 @@ media
 *.ipynb
 .env
 venv
-./was_server/.static_root
