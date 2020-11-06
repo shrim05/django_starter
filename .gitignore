@@ -1,0 +1,12 @@
+db.sqlite3
+__pycache__
+.idea
+.history
+.vscode.env
+media
+.vscode
+.ipynb_checkpoints
+*.ipynb
+.env
+venv
+./was_server/.static_root

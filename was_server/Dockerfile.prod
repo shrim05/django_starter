@@ -1,0 +1,12 @@
+FROM python:3.8-slim-buster AS builder
+RUN apt-get update &&  apt-get install -y apt-utils vim gcc default-libmysqlclient-dev
+
+WORKDIR /app
+COPY    requirements/   /app/requirements/
+RUN    pip install -r /app/requirements/prod.txt
+
+ENV PYTHONUNBUFFERED=1
+COPY prod_server_start.sh /
+
+COPY . /app
+RUN chmod +x /prod_server_start.sh

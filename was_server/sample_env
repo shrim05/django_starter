@@ -1,0 +1,15 @@
+#아래 내용을 수정 후 파일명 .env 로 변경 (.env 파일은 docker-compose 에서 자동으로 읽음)
+
+#db settings
+MYSQL_ROOT_PASSWORD=root_password
+MYSQL_DEV_DATABASE=db_name
+MYSQL_USER=user_name
+MYSQL_PASSWORD=user_password
+MYSQL_PORT=3306
+
+#docker-compose settings
+EXTERNAL_MYSQL_PORT=23306
+EXTERNAL_DJANGO_PORT=8000
+
+#django setting info
+SECRET_KEY=secret_key from django project
