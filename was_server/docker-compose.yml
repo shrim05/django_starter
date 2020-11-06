@@ -34,7 +34,7 @@ services:
      - DEFAULT_USER=${MYSQL_USER}
      - DEFAULT_PASSWORD=${MYSQL_PASSWORD}
      - DFAULT_PORT=${MYSQL_PORT}
-     - SECRET_KEY=${SECRET_KEY}
+     - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
     depends_on:
       - db
     restart: always
